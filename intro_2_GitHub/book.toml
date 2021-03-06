@@ -1,0 +1,6 @@
+[book]
+authors = ["Alonso Martinez"]
+language = "es"
+multilingual = false
+src = "src"
+title = "Introducción a GitHub"
