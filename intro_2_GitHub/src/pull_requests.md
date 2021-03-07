@@ -10,7 +10,7 @@ encargadas del mantenimiento lo revisen y quizás incorporen los
 cambios al código principal. Los pull requests se pueden hacer por
 personas con permisos de modificar el código directamente, o por
 personas que hayan hecho un _fork_ del _repo_ porque no tienen ese
-permiso. Para las personas con permisos pueden ser una petición al
+permiso. Para las personas con permisos pueden hacer una petición al
 resto del equipo para que revisen su código y aprueben los cambios
 hechos. Para las personas que hacen un _pull request_ mediante un
 _fork_ es una propuesta para incorporar sugerencias. Por ejemplo para
@@ -22,7 +22,7 @@ Esta guía está enfocada a la creación de _pull requests_ mediante
 _forks_ porque es un caso de uso más común. Para eso, se necesita
 tener un _fork_ listo. Retomamos el ejemplo de _fork_ en los primeros
 capítulos de la guía. Digamos que después de haber clonado
-`ÌTAM4Code/Cursos`, haberlo clonado, y hacer cambios a él[^1], una vez
+`ITAM4Code/Cursos` y hacer cambios a él[^1], una vez
 sincronizado GitHub, aparecerá una pantalla similar a la siguiente en
 la página principal del _repo_.
 
@@ -36,11 +36,10 @@ En el área marcada con el rectángulo rojo se encuentra el área en la
 que se muestra el mensaje de confirmación de los cambios más
 recientes. En este caso, GitHub sabe que este _repo_ es un _fork_ de
 otro repo, y además nota que están en versiones distintas. En este
-caso el _fork_ está adelantado al original. Es decir, hay cambios en
-el _fork_ que no están en el original, y por lo tanto se puede hacer
-un pull request. Y efectivamente, en el lado derecho del recuadro
-GitHub da un botón para crear uno nuevo. Al hacer click se puede ver
-la siguiente pantalla:
+caso el _fork_ está adelantado al original. Es decir, si hay cambios en
+el _fork_ se puede hacer un pull request para que se reflejen estos cambios en el original. 
+Y efectivamente, en el lado derecho del recuadro
+GitHub da un botón para crear un pull request. 
 
 ![Primer paso de un PR](figs/pr_1st_step.png)
 

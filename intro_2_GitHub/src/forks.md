@@ -20,7 +20,7 @@ Hablaremos con mucho más detalle de _pull request_ más tarde.
 Otra razón igual de válida para crear un _fork_ es crear una versión
 propia y personalizada del proyecto original. Si los cambios pueden
 ser útiles para otras personas puedes proponer que se incorporen al
-original. Y si no lo son y los dueños de ese repo deciden que no
+original. Y si no lo son y las personas dueñas de ese repo deciden que no
 quieren incorporarlo, ¡puedes tener tu propia versión! Es una de las
 bondades del open source[^1]
 
