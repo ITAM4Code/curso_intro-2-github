@@ -1,4 +1,4 @@
-# Como vamos a trabajar en GitHub
+# Cómo vamos a trabajar en GitHub
 
 Si bien git por sí solo permite colaborar de manera ágil con miles de
 personas en todo el mundo, GitHub no solo provee una plataforma para
