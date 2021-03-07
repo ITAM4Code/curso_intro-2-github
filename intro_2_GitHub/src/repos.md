@@ -5,7 +5,7 @@ repositorio. Un repositorio se puede pensar como una "carpeta" en la
 que se guarda todo lo relacionado a un proyecto. El concepto de repo
 viene de git, y se mantiene en GitHub, y es uno de los objetos básicos
 de trabajar con git y GitHub. Un _repo_ puede ser propiedad de un
-usuario o de una organización o equipo dentro de ésta. La manera en la
+usuario o de una organización o equipo dentro de esta. La manera en la
 que estaremos trabajando es con _repos_ que pertenecen a la
 organización que creamos para colaborar.
 
@@ -21,7 +21,7 @@ Todas estas se explicarán con más detalle a continuación.
 ### ¿Cómo creo un nuevo _repo_?
 
 Al entrar a GitHub podrás ver la barra principal del sitio en la parte
-más alta de la pantalla como se muestra en la foto.
+más alta de la pantalla como se muestra en la siguiente foto.
 
 ![Botón + para crear repo](figs/new_repo_btn.png)
 
