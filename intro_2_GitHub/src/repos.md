@@ -4,9 +4,9 @@ _Repo_ es una abreviación de _repository_, que se traduce a
 repositorio. Un repositorio se puede pensar como una "carpeta" en la
 que se guarda todo lo relacionado a un proyecto. El concepto de repo
 viene de git, y se mantiene en GitHub, y es uno de los objetos básicos
-de trabajar con git y Github. Un _repo_ puede ser propiedad de un
+de trabajar con git y GitHub. Un _repo_ puede ser propiedad de un
 usuario o de una organización o equipo dentro de ésta. La manera en la
-que estarmos trabajando es con _repos_ que pertenecen a la
+que estaremos trabajando es con _repos_ que pertenecen a la
 organización que creamos para colaborar.
 
 Algunas de las operaciones básicas de git que se pueden hacer sobre
@@ -25,7 +25,7 @@ más alta de la pantalla como se muestra en la foto.
 
 ![Botón + para crear repo](figs/new_repo_btn.png)
 
-En la parte derecha de la bara de navegación podrás encontrar tu foto
+En la parte derecha de la barra de navegación podrás encontrar tu foto
 de perfil, y a su lado izquierdo un botón "+". Al darle click podrás
 ver la siguiente pantalla:
 
@@ -39,6 +39,6 @@ Por ahora, solo tienes que darle un nombre. Las demás opciones de
 configuración por ahora no hacen falta, las discutiremos más tarde.
 
 Para empezar a modificar este _repo_ puedes clonarlo a tu computadora
-y asi tendrás una copia la cual puedes modificar y más tarde
+y así tendrás una copia la cual puedes modificar y más tarde
 sincronizar con GitHub. El proceso de clonación se cubre con mucho más
 detalle en las notas dedicadas a git.

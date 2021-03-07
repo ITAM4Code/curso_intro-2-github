@@ -1,4 +1,4 @@
-## ¿Qué es un _fork_?
+# ¿Qué es un _fork_?
 
 Un _fork_ es una copia exacta de un _repo_, con algunas
 particularidades. Al hacer un _fork_ de un _repo_ en GitHub estás
@@ -26,18 +26,18 @@ bondades del open source[^1]
 
 [^1]: Esto pasa con relativa frecuencia. Por ejemplo Vim y Neovim.
 
-### ¿Cómo hago un _fork_?
+## ¿Cómo hago un _fork_?
 
 El primer paso para hacer un _fork_ es identificar qué _repo_ quieres
 "_forkear_". Por ejemplo, puedes intentar con el código fuente de
 estas mismas [notas](https://github.com/ITAM4Code/Cursos)! En la
-página encontrarás algo similar a la imágen de abajo.
+página encontrarás algo similar a la imagen de abajo.
 
-![Página princial de _repo_](figs/notas_repo_page.png)
+![Página principal de _repo_](figs/notas_repo_page.png)
 
 Para hacer un fork, da click a el botón que dice "fork", el que tiene
-una flecha roja en la imágen anterior. Cuando lo hagas verás una
-pantalla similar a la siguiente imágen.
+una flecha roja en la imagen anterior. Cuando lo hagas verás una
+pantalla similar a la siguiente imagen.
 
 ![Proceso forking](figs/fork_process.png)
 

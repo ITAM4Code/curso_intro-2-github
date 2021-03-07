@@ -3,7 +3,7 @@
 Si bien git por sí solo permite colaborar de manera ágil con miles de
 personas en todo el mundo, GitHub no solo provee una plataforma para
 alojar el código sino que da una variedad de herramientas que
-facilitan la construccón colaborativa de software de calidad. En ITAM
+facilitan la construcción colaborativa de software de calidad. En ITAM
 For Code queremos utilizar estas herramientas para trabajar entre
 nosotros y para contribuir a proyectos open source mucho más grandes.
 Algunas de las cosas en las que nos estaremos enfocando son: _issues_,

@@ -10,36 +10,36 @@ código. Lo mejor que se puede hacer en estos casos es informar a quien
 se encarga de dar mantenimiento al proyecto, pero hacerlo por ejemplo
 por emails individuales es muy ineficiente. ¿Qué pasa si yo encuentro
 un _bug_ que ya fue descubierto hace semanas y lo reporto? Estaré
-duplicando información y haciendo más dificil arreglarlo.
+duplicando información y haciendo más difícil arreglarlo.
 
 Para mantener toda la información organizada para quien trabaje en el
 proyecto y las personas que lo usan hacemos _issues_ en el repo. Los
-_issues_ sirven como reportes con toda la inforamción que podría
+_issues_ sirven como reportes con toda la información que podría
 ayudar a resolver el problema, y además también son útiles para los
-usarios ya que pueden buscar ahí un problema que hayan tenido y quizás
-ahi esté la solución[^1]. Los _issues_ se pueden crear por muchas
-razones. Por ejemplo para reportar erroes, comportamiento inesperado,
+usuarios ya que pueden buscar ahí un problema que hayan tenido y quizás
+ahí esté la solución[^1]. Los _issues_ se pueden crear por muchas
+razones. Por ejemplo para reportar errores, comportamiento inesperado,
 o incluso para pedir que se agreguen cosas que nos gustaría usar. Por
 ahora nos enfocaremos en reportar errores.
 
 [^1]: Pro tip: Si estás usando software open source y te encuentras
   con un _bug_ es muy buena idea empezar a buscar soluciones en la
   pestaña de bugs en el repo que tiene el código fuente. Es posible
-  que encuentres la solución, y si no es asi, podrás crear un reporte.
+  que encuentres la solución, y si no es así, podrás crear un reporte.
   Eso también es ayudar a la comunidad!
 
 ## ¿Cómo creo un _issue_?
 
 Para crear un _issue_ pues dar click a la pestaña issues en la página
-princial del repo. Ahi verás una pantalla como la siguiente:
+principal del repo. Ahí verás una pantalla como la siguiente:
 
-![Patalla issues](figs/issues_page.png)
+![Pantalla issues](figs/issues_page.png)
 
 Si das click en el botón verde enorme que dice "New Issue" podrás ver
-la pantalla siguiente y ahi empezar a llenar un reporte[^2].
+la pantalla siguiente y ahí empezar a llenar un reporte[^2].
 
 [^2]: Algunos repos te mostrarán una pequeña página con _templates_ de
-  issues. Si los usas y llenas la información qu te piden podrás
+  issues. Si los usas y llenas la información que te piden podrás
   ayudar aún mejor a que se resuelva el problema.
 
 ![Nuevo issue](figs/new_issue.png)

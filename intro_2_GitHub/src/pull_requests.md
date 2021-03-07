@@ -13,7 +13,7 @@ personas que hayan hecho un _fork_ del _repo_ porque no tienen ese
 permiso. Para las personas con permisos pueden ser una petición al
 resto del equipo para que revisen su código y aprueben los cambios
 hechos. Para las personas que hacen un _pull request_ mediante un
-_fork_ es una prupuesta para incorporar sugerencias. Por ejemplo para
+_fork_ es una propuesta para incorporar sugerencias. Por ejemplo para
 resolver un _issue_ creado o proponer nueva funcionalidad.
 
 ## ¿Cómo crear un _pull request_?
@@ -56,7 +56,7 @@ click al botón verde.
 En este paso vemos dos áreas para llenar información, una a la derecha
 y otra a la izquierda. En la izquierda se puede llenar el título del
 _pull request_ y el resto de información relevante. En la sección
-sobre _issues_ detallamos un poco más sobre qué se puede incluír en
+sobre _issues_ detallamos un poco más sobre qué se puede incluir en
 esta sección.
 
 Del lado derecho hay una variedad de opciones:
@@ -83,7 +83,7 @@ Sin muchos detalles, esto es lo que cada campo se refiere:
    más de los proyectos más tarde.
 
 4. Los _milestones_ son listas que se pueden crear con issues
-   espcíficos ordenados por prioridad. Se crean cuando se tiene un
+   específicos ordenados por prioridad. Se crean cuando se tiene un
    deadline en mente y se quiere ir revisando el progreso.
 
 5. Se pueden resolver _issues_ mediante _pull requests_. Si un _pull
@@ -97,10 +97,10 @@ en específico se puede ver una pantalla como esta:
 
 ![Página de un pull request](figs/pr_page.png)
 
-Aqui se pueden revisar los cambios dando click en las pestañas de
+Aquí se pueden revisar los cambios dando click en las pestañas de
 Commits o Files Changed. GitHub mostrará una página de comparación
 entre el código del _fork_ y el original. En la página principal se
-pueden hacer comantarios con respecto a los cambios, y sugerir otras
+pueden hacer comentarios con respecto a los cambios, y sugerir otras
 modificaciones para poder aceptar el _pull request_. Si después de ese
 proceso se desea hacer _merge_, se puede dar click al botón verde
 marcado para eso. En caso de que se rechacen los cambios se puede
