@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="es" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Issues - Introducción a GitHub</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1_intro.html"><strong aria-hidden="true">1.</strong> ¿Qué es GitHub?</a></li><li class="chapter-item expanded "><a href="2_basico.html"><strong aria-hidden="true">2.</strong> Operaciones básicas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="repos.html"><strong aria-hidden="true">2.1.</strong> Repos</a></li><li class="chapter-item expanded "><a href="forks.html"><strong aria-hidden="true">2.2.</strong> Forking</a></li></ol></li><li class="chapter-item expanded "><a href="3_workflow.html"><strong aria-hidden="true">3.</strong> Workflow en GitHub</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pull_requests.html"><strong aria-hidden="true">3.1.</strong> Pull Requests</a></li><li class="chapter-item expanded "><a href="issues.html" class="active"><strong aria-hidden="true">3.2.</strong> Issues</a></li><li class="chapter-item expanded "><a href="projects.html"><strong aria-hidden="true">3.3.</strong> Projects</a></li><li class="chapter-item expanded "><a href="milestones.html"><strong aria-hidden="true">3.4.</strong> Milestones</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Introducción a GitHub</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="issues"><a class="header" href="#issues">Issues</a></h1>
+<blockquote>
+<p>Every non-trivial program contains at least one bug</p>
+<p>--Murphy computer laws</p>
+</blockquote>
+<p>Cuando se comparte software, es casi una garantía que la comunidad que
+lo usa va a encontrar <em>bugs</em> (o errores) en el funcionamiento del
+código. Lo mejor que se puede hacer en estos casos es informar a quien
+se encarga de dar mantenimiento al proyecto, pero hacerlo por ejemplo
+por emails individuales es muy ineficiente. ¿Qué pasa si yo encuentro
+un <em>bug</em> que ya fue descubierto hace semanas y lo reporto? Estaré
+duplicando información y haciendo más difícil arreglarlo.</p>
+<p>Para mantener toda la información organizada para quien trabaje en el
+proyecto y las personas que lo usan hacemos <em>issues</em> en el repo. Los
+<em>issues</em> sirven como reportes con toda la información que podría
+ayudar a resolver el problema, y además también son útiles para los
+usuarios ya que pueden buscar ahí un problema que hayan tenido y quizás
+ahí esté la solución<sup class="footnote-reference"><a href="#1">1</a></sup>. Los <em>issues</em> se pueden crear por muchas
+razones. Por ejemplo para reportar errores, comportamiento inesperado,
+o incluso para pedir que se agreguen cosas que nos gustaría usar. Por
+ahora nos enfocaremos en reportar errores.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>Pro tip: Si estás usando software open source y te encuentras
+con un <em>bug</em> es muy buena idea empezar a buscar soluciones en la
+pestaña de bugs en el repo que tiene el código fuente. Es posible
+que encuentres la solución, y si no es así, podrás crear un reporte.
+Eso también es ayudar a la comunidad!</p>
+</div>
+<h2 id="cómo-creo-un-issue"><a class="header" href="#cómo-creo-un-issue">¿Cómo creo un <em>issue</em>?</a></h2>
+<p>Para crear un <em>issue</em> pues dar click a la pestaña issues en la página
+principal del repo. Ahí verás una pantalla como la siguiente:</p>
+<p><img src="figs/issues_page.png" alt="Pantalla issues" /></p>
+<p>Si das click en el botón verde enorme que dice &quot;New Issue&quot; podrás ver
+la pantalla siguiente y ahí empezar a llenar un reporte<sup class="footnote-reference"><a href="#2">2</a></sup>.</p>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>Algunos repos te mostrarán una pequeña página con <em>templates</em> de
+issues. Si los usas y llenas la información que te piden podrás
+ayudar aún mejor a que se resuelva el problema.</p>
+</div>
+<p><img src="figs/new_issue.png" alt="Nuevo issue" /></p>
+<p>El la parte izquierda podrás elegir un título y llenar más
+información. Trata de elegir un título corto pero ilustrativo. Abajo
+del título puedes hacer comentarios más extensos, y en muchas
+ocasiones se pide que se de mucha información. Puedes incorporar
+código, listas, links, y todo lo que permite
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown</a>.
+Incluso puedes hacer referencia a otros <em>issues</em> por su número de
+<em>issue</em>, mencionar personas o equipos con @, o hace referencia a
+commit con su número de hash<sup class="footnote-reference"><a href="#3">3</a></sup>.</p>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<p>Un número de hash es un código alfanumérico que identifica
+únicamente a un commit específico. Qué es un commit y qué es un hash
+se discuten con más claridad en las notas de git. Por ahora basta
+con pensar en un <em>commit</em> como una versión específica del código.</p>
+</div>
+<p>En la parte derecha de la pantalla vemos las mismas opciones que las
+discutidas en la sección sobre <em>pull requests</em>. Salvo que ahora
+estamos ligando <em>issues</em> a <em>pull request</em> y no al revés.</p>
+<h2 id="cómo-marco-un-issue-como-resuelto"><a class="header" href="#cómo-marco-un-issue-como-resuelto">¿Cómo marco un issue como resuelto?</a></h2>
+<p>En esencia hay dos maneras de resolver un issue:</p>
+<ol>
+<li>Cerrarlo mediante un <em>pull request</em></li>
+<li>Cerrarlo manualmente</li>
+</ol>
+<p>La primera opción es sencilla conceptualmente. Si el <em>issue</em> actual
+fue mencionado en un <em>pull request</em>, y ese recibe aprobación de
+<em>merge</em> entonces el <em>issue</em> se cerrará automáticamente. Esto también
+se puede hacer haciendo el mensaje de <em>commit</em> algo del estilo
+<code>closes</code> o <code>fixes</code> seguido de <code>#n</code> donde <em>n</em> es el número de <em>issue</em>
+que se puede ver al lado de su título en la página de <em>issues</em>. Cada
+<em>issue</em> y <em>pull request</em> se numera en orden sucesivo a medida que se
+crea.</p>
+<p>Para cerrar un <em>issue</em> manualmente el proceso es muy simple. Al final
+de todos los comentarios hay un botón rojo que dice algo como &quot;close
+issue&quot;. Esto solo se puede hacer si tienes permisos de escritura sobre
+el <em>repo</em>. Es decir, si formas parte del equipo al cual le pertenece o
+si tienes invitación para colaborar.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="pull_requests.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="projects.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="pull_requests.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="projects.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
